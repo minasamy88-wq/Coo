@@ -1,0 +1,85 @@
+{
+  "company": {
+    "name": "Acme Corp",
+    "industry": "SaaS",
+    "stage": "Series B",
+    "employee_count": 120,
+    "founded": 2019
+  },
+  "leadership": {
+    "ceo": "Jane Smith",
+    "cto": "John Doe",
+    "cfo": "Sarah Johnson"
+  },
+  "strategy": {
+    "mission": "Democratize data analytics for small businesses",
+    "vision": "Every business decision powered by data",
+    "current_focus": [
+      "Product-led growth",
+      "Enterprise expansion",
+      "Platform reliability"
+    ]
+  },
+  "okrs": {
+    "current_quarter": "Q1-2025",
+    "company_okrs": [
+      {
+        "objective": "Accelerate enterprise adoption",
+        "key_results": [
+          "Close 10 enterprise deals ($100k+ ACV)",
+          "Reduce enterprise sales cycle to <60 days",
+          "Achieve 95% enterprise customer satisfaction"
+        ]
+      },
+      {
+        "objective": "Build world-class engineering team",
+        "key_results": [
+          "Hire 15 engineers (5 senior+)",
+          "Reduce deployment frequency to daily",
+          "Achieve <1% production incident rate"
+        ]
+      }
+    ]
+  },
+  "teams": [
+    {
+      "name": "Engineering",
+      "lead": "John Doe",
+      "size": 45,
+      "subteams": ["Platform", "Product", "Data", "Security"]
+    },
+    {
+      "name": "Product",
+      "lead": "Mike Chen",
+      "size": 12
+    },
+    {
+      "name": "Sales",
+      "lead": "Lisa Park",
+      "size": 25
+    },
+    {
+      "name": "Marketing",
+      "lead": "Alex Rivera",
+      "size": 15
+    },
+    {
+      "name": "Customer Success",
+      "lead": "Emily Watson",
+      "size": 18
+    }
+  ],
+  "tools": {
+    "project_management": "Linear",
+    "documentation": "Notion",
+    "communication": "Slack",
+    "crm": "Salesforce",
+    "hr": "Rippling",
+    "finance": "QuickBooks"
+  },
+  "meeting_cadence": {
+    "exec_sync": "Monday 9am",
+    "all_hands": "Friday 3pm (bi-weekly)",
+    "board_meeting": "Last Thursday of quarter"
+  }
+}
