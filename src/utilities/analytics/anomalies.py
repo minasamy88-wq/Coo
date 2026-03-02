@@ -1,5 +1,7 @@
 """Anomaly detection for utility bills: spike, peer comparison, and trend drift."""
 
+from __future__ import annotations
+
 import numpy as np
 import pandas as pd
 

@@ -1,5 +1,7 @@
 """CSV bill parser with flexible column detection."""
 
+from __future__ import annotations
+
 from datetime import date, datetime
 from pathlib import Path
 

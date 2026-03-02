@@ -1,5 +1,7 @@
 """Pre-populate database with known Ontario rental properties and provider mappings."""
 
+from __future__ import annotations
+
 from .database import create_property, get_all_properties, get_property_by_name, init_db
 from .models import PropertyModel
 

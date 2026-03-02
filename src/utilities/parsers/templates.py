@@ -5,6 +5,8 @@ These are initial best-effort patterns; the system learns and refines
 them from user confirmations via the provider_templates DB table.
 """
 
+from __future__ import annotations
+
 import json
 import re
 from dataclasses import dataclass, field
