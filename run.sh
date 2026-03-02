@@ -13,4 +13,4 @@ fi
 
 source "$VENV_DIR/bin/activate"
 cd "$SCRIPT_DIR"
-streamlit run src/utilities/app.py
+streamlit run dashboard.py
