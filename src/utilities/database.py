@@ -458,7 +458,7 @@ def get_monthly_totals(months: int = 12) -> list[dict]:
     """Get total spend per month per utility type across all properties."""
     with get_connection() as conn:
         rows = conn.execute(
-            """SELECT strftime('%%Y-%%m', b.period_start) as month,
+            """SELECT strftime('%Y-%m', b.period_start) as month,
                       m.utility_type,
                       SUM(b.total_amount) as total,
                       COUNT(b.id) as bill_count
@@ -476,7 +476,7 @@ def get_property_monthly_totals(property_id: int, months: int = 12) -> list[dict
     """Get monthly spend by utility type for a specific property."""
     with get_connection() as conn:
         rows = conn.execute(
-            """SELECT strftime('%%Y-%%m', b.period_start) as month,
+            """SELECT strftime('%Y-%m', b.period_start) as month,
                       m.utility_type,
                       SUM(b.total_amount) as total,
                       SUM(b.usage_amount) as total_usage,
