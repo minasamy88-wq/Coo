@@ -171,8 +171,8 @@ def _handle_parsed_bill(parsed: ParsedBillData, properties, unique_key: str):
         return
 
     # Need user to assign to a property
-    st.markdown(f"**Bill needs assignment:** {parsed.utility_type or 'Unknown'} "
-                f"${parsed.total_amount:,.2f if parsed.total_amount else 'N/A'}")
+    amount_str = f"${parsed.total_amount:,.2f}" if parsed.total_amount else "N/A"
+    st.markdown(f"**Bill needs assignment:** {parsed.utility_type or 'Unknown'} {amount_str}")
 
     if parsed.service_address:
         st.caption(f"Service address: {parsed.service_address}")
@@ -190,7 +190,8 @@ def _handle_parsed_bill(parsed: ParsedBillData, properties, unique_key: str):
         with col2:
             st.text(f"Period: {parsed.period_start} to {parsed.period_end}")
             st.text(f"Usage: {parsed.usage_amount} {parsed.usage_unit or ''}")
-            st.text(f"Total: ${parsed.total_amount:,.2f}" if parsed.total_amount else "Total: N/A")
+            total_str = f"${parsed.total_amount:,.2f}" if parsed.total_amount else "N/A"
+            st.text(f"Total: {total_str}")
             st.text(f"Confidence: {parsed.confidence:.0%}")
 
     # Property selector
