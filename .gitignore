@@ -23,6 +23,10 @@ config/org_context.json
 *.log
 .cache/
 
+# Utility bills data (local DB + uploaded files)
+data/
+!data/.gitkeep
+
 # OS
 .DS_Store
 Thumbs.db
